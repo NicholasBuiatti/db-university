@@ -1,0 +1,21 @@
+1) SELECT * FROM students WHERE date_of_birth BETWEEN '1990-01-01' AND '1990-12-31';
+
+2) SELECT * FROM `courses` WHERE cfu > 10;
+
+3) SELECT * FROM students WHERE TIMESTAMPDIFF(YEAR, date_of_birth, '2024-06-19') >= 30;
+
+4) SELECT * FROM `courses` WHERE period = 'I semestre' AND year = 1;
+
+5) SELECT * FROM `exams` WHERE date = '2020-06-20' AND hour > '14:00:00';
+
+6) SELECT * FROM `degrees` WHERE level = 'magistrale';
+
+7) SELECT * FROM `departments`;
+
+8) SELECT * FROM `teachers` WHERE phone IS NULL;
+
+9) INSERT INTO students ( degree_id, name, surname, date_of_birth, fiscal_code, enrolment_date, registration_number, email ) VALUES ( 70, 'Nicholas', 'Buiatti', '1993-08-15', 'BTTNHL93M15G284C', '2019-02-21', 420011, 'nic.buiatti@gmail.com' );
+
+10) UPDATE teachers SET office_number = 126 WHERE name = 'Pietro' AND surname = 'Rizzo';
+
+11)DELETE FROM students WHERE name = 'Nicholas' AND surname = 'Buiatti';
